@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ECF0F1;
+}
+
+.animation {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+header {
+  background: rgba(208, 211, 212, 0.3137254902);
+  padding: 20px 0;
+}
+header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #343751;
+}
+header a img {
+  height: 60px;
+  margin-left: 10px;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+
+#search {
+  padding: 40px 10px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.138);
+}
+#search form {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  justify-content: center;
+}
+#search form input {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 100px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.537254902);
+  background: #ECF0F1;
+}
+#search form input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.537254902);
+  font-size: 25px;
+}
+#search form input::placeholder {
+  color: rgba(0, 0, 0, 0.537254902);
+  font-size: 25px;
+}
+
+#cocktail {
+  margin-top: 20px;
+}
+#cocktail .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+#cocktail .row div {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  background: #fff;
+  border-radius: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#cocktail .row div .cocktail-content {
+  padding: 15px;
+  color: #44486D;
+}
+#cocktail .row div .cocktail-content img {
+  overflow: hidden;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+}
+#cocktail .row div .cocktail-content h5 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+#cocktail .row div .cocktail-content h4 {
+  font-size: 23px;
+}
+#cocktail .row div .cocktail-content p {
+  font-size: 18px;
+}
+#cocktail .row div a {
+  padding: 15px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 22px;
+  transition: 300ms all;
+}
+#cocktail .row div a:hover {
+  color: #13C7F0;
+}
+#cocktail .row div a:hover svg {
+  transform: translateX(5px);
+}
+#cocktail .row div a svg {
+  transition: 300ms all;
+  margin-left: 5px;
+  width: 18px;
+}
+
+.detail .prevBtn {
+  border: 1px solid #44486D;
+  border-radius: 30px;
+  padding: 0px 10px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.detail .prevBtn a svg {
+  padding: 3px;
+  margin-bottom: -4px;
+  color: #343751;
+  width: 45px;
+}
+.detail .top-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  color: #44486D;
+}
+.detail .cocktail-content {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detail .cocktail-content img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 450px;
+  padding-right: 20px;
+}
+.detail .cocktail-content div {
+  flex: 1;
+}
+.detail .cocktail-content div p {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.detail .cocktail-content div p:last-child {
+  margin-bottom: 0;
+}
+.detail .cocktail-content div p span {
+  font-weight: 500;
+  font-size: 22px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  display: block;
+  background: #13C7F0;
+}
+.detail .cocktail-content div ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.detail .cocktail-content div ul span {
+  font-weight: 500;
+  font-size: 22px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  display: block;
+  background: #13C7F0;
+}
+.detail .cocktail-content div ul li {
+  background: rgba(208, 211, 212, 0.3137254902);
+  border-radius: 5px;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.detail .cocktail-content div ul li:last-child {
+  margin-right: 0;
+}
+
+.not {
+  text-align: center;
+  font-size: 20px;
+  color: #44486D;
+}
+
+@media only screen and (max-width: 992px) {
+  #cocktail .row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .detail .cocktail-detail {
+    flex-direction: column;
+  }
+  .detail .cocktail-detail img {
+    width: 100%;
+    max-height: 450px;
+    padding-right: 0;
+    border-radius: 10px;
+  }
+  .detail .cocktail-detail div {
+    margin-top: 30px;
+  }
+  .detail .cocktail-detail div ul {
+    justify-content: center;
+  }
+  .detail .cocktail-detail div p {
+    flex-direction: column;
+    text-align: center;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .detail .cocktail-detail div p span {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #cocktail .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 480px) {
+  #cocktail {
+    margin-top: 5px;
+  }
+  #search {
+    padding: 25px 0;
+  }
+  .detail {
+    padding: 10px 15px;
+  }
+  .detail .cocktail-detail {
+    margin-top: 20px;
+  }
+  .detail .prevBtn {
+    padding: 0 10px;
+  }
+  .detail .prevBtn a svg {
+    width: 45px;
+  }
+  .detail .top-title {
+    font-size: 40px;
+  }
+  #cocktail .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=App.css.map */
