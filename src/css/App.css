@@ -252,16 +252,30 @@ header a img {
 }
 @media only screen and (max-width: 480px) {
   #cocktail {
-    margin-top: 5px;
+    margin-top: 0px;
   }
   #search {
-    padding: 25px 0;
+    padding: 20px 0;
+  }
+  #search form input {
+    padding: 15px;
+    font-size: 19px;
+  }
+  #search form input::-moz-placeholder {
+    font-size: 19px;
+  }
+  #search form input::placeholder {
+    font-size: 19px;
   }
   .detail {
     padding: 10px 15px;
   }
   .detail .cocktail-detail {
     margin-top: 20px;
+  }
+  .detail .cocktail-detail img {
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .detail .prevBtn {
     padding: 0 10px;

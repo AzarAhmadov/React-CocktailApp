@@ -302,11 +302,22 @@ header {
 
 @media only screen and (max-width:480px) {
   #cocktail {
-    margin-top: 5px;
+    margin-top: 0px;
   }
 
   #search {
-    padding: 25px 0;
+    padding: 20px 0;
+
+    form {
+      input {
+        padding: 15px;
+        font-size: 19px;
+
+        &::placeholder {
+          font-size: 19px;
+        }
+      }
+    }
   }
 
   .detail {
@@ -314,6 +325,10 @@ header {
 
     .cocktail-detail {
       margin-top: 20px;
+
+      img {
+        height: fit-content;
+      }
     }
 
     .prevBtn {
